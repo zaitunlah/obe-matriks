@@ -1,4 +1,5 @@
 \documentclass{article}   % Specifies the document class
+\usepackage[bahasa]{babel}
 \usepackage{amsmath}  % For math
 \usepackage{amssymb}  % For more math
 \usepackage{enumerate} % useful for itemization
@@ -13,77 +14,76 @@
 \geometry{
 	a4paper,
 	%total={170mm,257mm},
-	left=25mm,
+	left=20mm,
 	right=20mm,
 	top=25mm,
 	bottom=20mm,
 }
 \newcommand{\judul}{Transformasi Matriks: Operasi Baris untuk Persoalan Sistem Linier}
-\newcommand{\topik}{Matematika Komputasi}
+\newcommand{\nama}{Zaitun,S.Si.,M.Mat.}
+\newcommand{\judulfooter}{\emph{Transformasi Matriks}}
+\newcommand{\matkul}{[202100423] Matematika Komputasi}
+\newcommand{\versi}{2023 v1.01}
+\newcommand{\asosiasi}{Institut Teknologi Bacharuddin Jusuf Habibie}
+
+\usepackage{amsmath}  % For math
+\usepackage{amssymb}  % For more math
+\usepackage{enumerate} % useful for itemization
+\usepackage{enumitem}
+\usepackage{siunitx}  % standardization of si units
+\usepackage{graphicx}
+\graphicspath{{./gambar/}} %picture path
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+%Stop indentation on new paragraphs
+%\usepackage[parfill]{parskip}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{xcolor}
 
 %============== For header and footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 %  --------   Normal Headers
 \fancyhf{} % clear all fields
-%\fancyhead[C]{Paper Title: Modeling Reliability of the Grid}
-\fancyfoot[L]{Copyright\textcopyright~Zaitun, 2023}
-\fancyfoot[C]{\textsf{\thepage ~of~ \pageref{LastPage}}}
-\fancyfoot[R]{\textsf{2023, vol, issue}}
+\fancyhead[L]{\asosiasi}
+\fancyfoot[L]{\nama, ~\judulfooter}
+%\fancyfoot[C]{}
+\fancyfoot[R]{\textsf{Tulisan \versi~pages \textsf{\thepage~of~\pageref{LastPage}}}}
 \renewcommand{\headrulewidth}{0pt} % to remove line on header
 \renewcommand{\footrulewidth}{0pt} % to remove line on footer
-
-% ----------------------------define new page style for first page
-% \fancypagestyle{first}{%
-% 	\fancyhf{}% clear all header and footer fields
-% 	\fancyhead[L]{\JournalDataAndLogo}%
-% 	\fancyfoot[L]{Copyright \textcopyright 2014 MECS}%
-% 	\fancyfoot[R]{\emph{I.J. Computer Network and Information Security}, 2014, vol, issue, page}%
-% 	\renewcommand{\headrulewidth}{0pt}% to remove line on header
-% 	\renewcommand{\footrulewidth}{0pt}% to remove line on footer
-% }
-
-%\newcommand{\@judul}{Judul T.A.}
-%\DeclareRobustCommand{\Judul}[1]{%
-%	\renewcommand{\@judul}{#1}%
-% \newcommand{\JournalDataAndLogo}{%
-% 	\leavevmode\smash{%
-% 		\raisebox{-2ex}{% <----- adjust to suit
-% 			\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr@{}}
-% 				\begin{tabular}[b]{@{}l@{}}
-% 					\emph{\textbf{I.J. Computer Network and Information Security}}, 2014, Vol, issue, pages\\
-% 					Published Online Month 2014 in MECS (http://www.mecs-press.org/)\\
-% 					DOI:
-% 				\end{tabular}
-% 				&
-% 				\includegraphics[width=2.5cm,height=1.5cm]{example-image.pdf}
-% % 			\end{tabular*}%
-% 		}% end of \raisebox
-% 	}% end of \smash
-% }
+%==============================++==============================
+\usepackage[numbers]{natbib}
+% Since natbib uses an unnumbered section by default we define \bibsection
+% to make it a regular numbered section.
+\renewcommand \bibsection{\section{Daftar Pustaka}}
+ %citecolor
+ \usepackage[colorlinks,linkcolor={black},citecolor={blue!80!black},urlcolor={blue!80!black}]{hyperref}
+  \bibliographystyle{ieeetr}
 % %==============
 
 \begin{document}
-	
+
+\thispagestyle{empty}
 \begin{center}
     \vspace{.4cm}
     \textsf{\textbf { \large \judul}}
 \end{center}
 \vspace{.4cm}
 \hrule
-    \textsf{\\
-    \textbf{Zaitun,S.Si.,M.Mat.} \hspace{\fill}
-    \textit{\large }\\ [0.7ex]
-    \textit{zet.zaitun@gmail.com} \hspace{\fill} \textbf{}\\ [0.7ex]
-    Institut Teknologi Bacharuddin Jusuf Habibie \hspace{\fill} \textbf{-\topik}} \\
-\hrule
+	\textsf{\\
+		\textbf{\nama} \hspace{\fill}
+		\textit{\large }\\ [0.7ex]
+		\textit{zet.zaitun@gmail.com} \hspace{\fill} \textbf{}\\ [0.7ex]
+		\asosiasi \hspace{\fill} \textbf{- \matkul }} \\
+	\hrule
 \vspace{.4cm}
 %============================MULAI DOKUMEN
 \begin{center}
 \textbf{\Large Motivasi}
 \end{center}
 \paragraph*{} 
-Transformasi baris atau operasi baris dikenal sebagai proses baris elementer. Transformasi ini tidak mengubah struktur dari matriks tetapi hanya mengubah elemen dari matriks. Penggunaan transformasi ini akan memudahkan dalam menyelesaikan persoalan matriks. Beberapa persoalan matriks seperti menentukan invers matriks akan diterapkan operasi baris, kemudian pada akhir akan digunakan pula untuk menentukan solusi dari sistem persamaan linier multivariabel. Dengan adanya tulisan ini harapannya dapat membantu memahami proses dan langkah penyelesaian matriks dengan transformasi.
+Transformasi baris atau operasi baris dikenal sebagai proses baris elementer. Transformasi ini tidak mengubah struktur dari matriks tetapi hanya mengubah elemen dari matriks \textbf{\cite{zz}}. Penggunaan transformasi ini akan memudahkan dalam menyelesaikan persoalan matriks. Beberapa persoalan matriks seperti menentukan invers matriks akan diterapkan operasi baris, kemudian pada akhir akan digunakan pula untuk menentukan solusi dari sistem persamaan linier multivariabel. Dengan adanya tulisan ini harapannya dapat membantu memahami proses dan langkah penyelesaian matriks dengan transformasi.
 %section
 \input{point1}
 \input{point2}
@@ -93,13 +93,5 @@ Transformasi baris atau operasi baris dikenal sebagai proses baris elementer. Tr
 \paragraph*{} Penggunaan metode transformasi sangat memudahkan dalam menyelesaikan persoalan matriks karena sifatnya yang fleksibel pada ukuran matriks yang lebih besar. 
 
 \input{tugasmandiri}
-
-\begin{thebibliography}{2}
-\bibitem{}Zaitun,				                   %Authors
-	\newblock  (2023).					       % Years
-	\newblock TULISAN PRIBADI.			       % Title
-	\newblock \emph{Journal Name} number issue(section),  % Jurnal name and volume
-	\newblock City;										  % City
-	\newblock Page number.								  % Pages
-\end{thebibliography}
+\input{pustaka.tex}
 \end{document}
