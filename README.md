@@ -1,2 +1,2 @@
-# obe-matriks
-Belajar melakukan transformasi matriks
+# Transformasi Baris Elementer Matriks
+Artikel belajar melakukan transformasi matriks
