@@ -1,0 +1,194 @@
+\section{Invers Matriks}
+		\paragraph*{} Misalkan matriks $A$ memiliki invers $A^{-1}$, pada proses mendapatkan invers tersebut maka transformasi matriks yang telah dijelaskan sebelumnya akan digunakan untuk mendapatkan invers matriks dengan bentuk 
+		$$A~ \vdots~  I~~~~ \longrightarrow ~~~~I ~\vdots~ A^{-1}$$
+		dengan menuliskan matriks identitas di bagian kanan matriks $A$ kemudian operasi baris dilakukan bersama dengan matriks identitas.
+		\subsection{Matriks $2\times 2$}
+		Misalkan diketahui matriks 
+		\begin{align*}
+		A = \left[
+		\begin{array}{rr} 
+			2 & 1 \\
+			3 & -1 
+		\end{array} 
+		\right]
+	\end{align*}
+maka untuk menentukan invers matriks $A$ adalah dengan menuliskan matriks identitas di sebelah kanan
+ 	\begin{align*}
+ 	\begin{array}{r|r} 
+ 		 \left[
+ 		\begin{array}{rr} 
+ 			2 & 1 \\
+ 			3 & -1 
+ 		\end{array} 
+ 		\right]  &  \left[
+ 		\begin{array}{rr} 
+ 			1 & 0 \\
+ 			0 & 1 
+ 		\end{array} 
+ 		\right]
+ 	\end{array}
+ \end{align*}
+Langkah 1: $\textbf{b}^*_1= \textbf{b}_1 + \textbf{b}_2$ \\
+\begin{align*}
+	\begin{array}{r|r} 
+		\left[
+		\begin{array}{rr} 
+			5 & 0 \\
+			3 & -1 
+		\end{array} 
+		\right]  &  \left[
+		\begin{array}{rr} 
+			1 & 1 \\
+			0 & 1 
+		\end{array} 
+		\right]
+	\end{array}
+\end{align*}
+Langkah 2 : $\textbf{b}^*_2= 5\textbf{b}_2 - 3\textbf{b}_1$ \\
+\begin{align*}
+	\begin{array}{r|r} 
+		\left[
+		\begin{array}{rr} 
+			5 & 0 \\
+			0 & -5 
+		\end{array} 
+		\right]  &  \left[
+		\begin{array}{rr} 
+			1 & 1 \\
+			-3 & 2 
+		\end{array} 
+		\right]
+	\end{array}
+\end{align*}
+Langkah 3 : $\textbf{b}^*_1= \dfrac{1}{5}\textbf{b}_1 $ dan $\textbf{b}^*_2= -\dfrac{1}{5}\textbf{b}_2$ \\
+\begin{align*}
+	\begin{array}{r|r} 
+		\left[
+		\begin{array}{rr} 
+			1 & 0 \\
+			0 & 1 
+		\end{array} 
+		\right]  &  \left[
+		\begin{array}{rr} 
+			1/5 & 1/5 \\
+			3/5 & -2/5 
+		\end{array} 
+		\right]
+	\end{array}
+\end{align*}
+dari hasil di atas, tujuan mendapatkan invers matriks  tercapai sesuai $I ~\vdots~ A^{-1}$ sehingga $$A^{-1}=\left[
+\begin{array}{rr} 
+	1/5 & 1/5 \\
+	3/5 & -2/5 
+\end{array} 
+\right]$$
+\subsection{Matriks $3\times 3$}
+Serupa dengan proses sebelumnya, untuk ukuran matriks yang lebih besar metode transformasi akan sangat membantu untuk mendapatkan invers matriks. Misalkan matriks berordo $3\times3$
+\begin{align*}
+	\begin{array}{r|r} 
+		\left[
+	\begin{array}{rrr} 
+		-2 & 1 & 2\\
+		2 & 3 & 1\\
+		-2 &1 & 3 
+	\end{array} 
+	\right]  & \left[
+	\begin{array}{rrr} 
+		1 & 0 & 0\\
+		0 & 1 & 0\\
+		0 &0 & 1 
+	\end{array} 
+	\right]
+	\end{array}
+\end{align*}
+Langkah 1: $\textbf{b}^*_1= \textbf{b}_1 - 2\textbf{b}_2~~,~~\textbf{b}^*_2= 3\textbf{b}_2 - \textbf{b}_3$ \\
+\begin{align*}
+	\begin{array}{r|r} 
+		\left[
+		\begin{array}{rrr} 
+			-6 & -5 & 0\\
+			8 & 8 & 0\\
+			-2 &1 & 3 
+		\end{array} 
+		\right]  & \left[
+		\begin{array}{rrr} 
+			1 & -2 & 0\\
+			0 & 3 & -1\\
+			0 &0 & 1 
+		\end{array} 
+		\right]
+	\end{array}
+\end{align*}
+Langkah 2 : $\textbf{b}^*_1= 8\textbf{b}_1 + 5\textbf{b}_2~~,~~\textbf{b}^*_3= 8\textbf{b}_3 - \textbf{b}_2$ \\
+\begin{align*}
+	\begin{array}{r|r} 
+		\left[
+		\begin{array}{rrr} 
+			-8 & 0 & 0\\
+			8 & 8 & 0\\
+			-24 &0 & 24 
+		\end{array} 
+		\right]  & \left[
+		\begin{array}{rrr} 
+			8 & -1 & -5\\
+			0 & 3 & -1\\
+			0 &-3 & 9 
+		\end{array} 
+		\right]
+	\end{array}
+\end{align*}
+Langkah 3 : $\textbf{b}^*_3= \dfrac{1}{3}\textbf{b}_3$ \\
+\begin{align*}
+	\begin{array}{r|r} 
+		\left[
+		\begin{array}{rrr} 
+			-8 & 0 & 0\\
+			8 & 8 & 0\\
+			-8 &0 & 8 
+		\end{array} 
+		\right]  & \left[
+		\begin{array}{rrr} 
+			8 & -1 & -5\\
+			0 & 3 & -1\\
+			0 &-1 & 3 
+		\end{array} 
+		\right]
+	\end{array}
+\end{align*}
+Langkah 4 : $\textbf{b}^*_2= \textbf{b}_2 + \textbf{b}_1~~,~~\textbf{b}^*_3= \textbf{b}_3 - \textbf{b}_1$ \\
+\begin{align*}
+	\begin{array}{r|r} 
+		\left[
+		\begin{array}{rrr} 
+			-8 & 0 & 0\\
+			0 & 8 & 0\\
+			0 &0 & 8 
+		\end{array} 
+		\right]  & \left[
+		\begin{array}{rrr} 
+			8 & -1 & -5\\
+			8 & 2 & -6\\
+			-8 &0 & 8 
+		\end{array} 
+		\right]
+	\end{array}
+\end{align*}
+Langkah 5 : $\textbf{b}^*_1= -\dfrac{1}{8}\textbf{b}_1~~,~~\textbf{b}^*_2= \dfrac{1}{8}\textbf{b}_2~~,~~\textbf{b}^*_3= \dfrac{1}{8}\textbf{b}_3$ \\
+\begin{align*}
+	\begin{array}{r|r} 
+		\left[
+		\begin{array}{rrr} 
+			1 & 0 & 0\\
+			0 & 1 & 0\\
+			0 &0 & 1 
+		\end{array} 
+		\right]  & \left[
+		\begin{array}{rrr} 
+			-1 & 1/8 & 5/8\\
+			1 & 1/4 & -3/4\\
+			-1 &0 & 1 
+		\end{array} 
+		\right]
+	\end{array}
+\end{align*}
+perlu namun tidak harus yaitu saat melakukan operasi kalau bisa tidak menggunakan bilangan pecahan untuk mengantisipasi kesalahan perhitungan yang kadang terjadi (kecuali telah mendapatkan hasil akhir).

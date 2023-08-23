@@ -1,0 +1,118 @@
+		\section{Transformasi Baris}
+		\paragraph*{} Misalkan matriks $A$ berordo $2\times2$ akan dilakukan transformasi untuk mendapatkan matriks baru dengan nilai elemen diagonalnya bernilai $1$ atau dengan kata lain menjadikan matriks $A$ menjadi matriks identitas. Penggunaan $\textbf{b}$ akan digunakan sebagai simbol baris dan \textit{superscript} ($*$) sebagai tanda update nilai baris pada transformasi ini.
+		\begin{align*}
+		A = \left[
+		\begin{array}{rr} 
+			2 & 1 \\
+			3 & -1 
+		\end{array} 
+		\right]
+		\end{align*}
+		Langkah 1: $\textbf{b}^*_1= \textbf{b}_1 + \textbf{b}_2$ \\
+		\begin{align*}
+			A=\left[
+			\begin{array}{rr} 
+				5 & 0 \\
+				3 & -1 
+			\end{array} 
+			\right]
+		\end{align*}
+		Langkah 2 : $\textbf{b}^*_2= 5\textbf{b}_2 - 3\textbf{b}_1$ \\
+		\begin{align*}
+			\left[
+			\begin{array}{rr} 
+				5 & 0 \\
+				0 & -5 
+			\end{array} 
+			\right]
+		\end{align*}
+		Langkah 3 : $\textbf{b}^*_1= \dfrac{1}{5}\textbf{b}_1 $ dan $\textbf{b}^*_2= -\dfrac{1}{5}\textbf{b}_2$ \\
+		\begin{align*}
+			\left[
+			\begin{array}{rr} 
+				1 & 0 \\
+				0 & 1
+			\end{array} 
+			\right]
+		\end{align*}
+		dari hasil di atas, tujuan mendapatkan matriks identitas tercapai. 
+		
+		\subsection[]{Determinan}Hal yang cukup menarik pada transformasi baris adalah jika diperhatikan pada langkah 1, dapat kita hitung minor baris 2 kolom 2 $M_{22}$ kemudian menghitung kofaktor baris 2 kolom 2 $K_{22}$ selanjutnya akan didapat nilai determinan dari matriks tersebut
+		$$K_{ij} = (-1)^{i+j}M_{ij}$$
+		\begin{align*}
+			K_{22} &= (-1)^{4}M_{22}\\
+			K_{22} &= 5
+		\end{align*}
+		dengan
+		$$det(A)=\sum_{i=1}^{n} A_{ij}K_{ij}~~~~ \texttt{untuk $j$ tetap}$$
+		atau 
+		$$det(A)=\sum_{j=1}^{n} A_{ij}K_{ij}~~~~ \texttt{untuk $i$ tetap}$$
+		karena dipakai kolom $2$ sehingga $j=2$ tetap
+		\begin{align*}
+			det(A)&=A_{12}K_{12} + A_{22}K_{22}\\
+			det(A)&=(0)K_{12} + (-1)(5)\\
+			det(A)&=-5
+		\end{align*}
+			
+		\subsection{Matriks $3\times3$}
+		% Transformasi ini tidak membatasi ordo matriks, sehingga untuk ordo berapapun dapat diselesaikan. Tambahan bahwa untuk ukuran matriks yang lebih besar, dapat diterapkan dua operasi sekaligus agar langkah proses lebih efisien. Misalkan matriks ordo $3\times3$ berikut
+				\begin{align*}
+		\left[
+		\begin{array}{rrr} 
+			-2 & 1 & 2\\
+			2 & 3 & 1\\
+			-2 &1 & 3 
+		\end{array} 
+		\right]
+	\end{align*}
+Langkah 1: $\textbf{b}^*_1= \textbf{b}_1 - 2\textbf{b}_2~~,~~\textbf{b}^*_2= 3\textbf{b}_2 - \textbf{b}_3$ \\
+\begin{align*}
+\left[
+\begin{array}{rrr} 
+	-6 & -5 & 0\\
+	8 & 8 & 0\\
+	-2 &1 & 3 
+\end{array} 
+\right]
+\end{align*}
+Langkah 2 : $\textbf{b}^*_2= \dfrac{1}{8}\textbf{b}_2$ \\
+\begin{align*}
+\left[
+\begin{array}{rrr} 
+	-6 & -5 & 0\\
+	1 & 1 & 0\\
+	-2 &1 & 3 
+\end{array} 
+\right]
+\end{align*}
+Langkah 3 : $\textbf{b}^*_1= \textbf{b}_1 + 5\textbf{b}_2~~,~~\textbf{b}^*_3= \textbf{b}_3 - \textbf{b}_2$ \\
+\begin{align*}
+\left[
+\begin{array}{rrr} 
+	-1 & 0 & 0\\
+	1 & 1 & 0\\
+	-3 &0 & 3 
+\end{array} 
+\right]
+\end{align*}
+Langkah 4 : $\textbf{b}^*_1= -\textbf{b}_1~~,~~\textbf{b}^*_3= \dfrac{1}{3}\textbf{b}_3$ \\
+\begin{align*}
+	\left[
+	\begin{array}{rrr} 
+		1 & 0 & 0\\
+		1 & 1 & 0\\
+		-1 &0 & 1 
+	\end{array} 
+	\right]
+\end{align*}
+Langkah 5 : $\textbf{b}^*_2= \textbf{b}_2 - \textbf{b}_1~~,~~\textbf{b}^*_3= \textbf{b}_3 + \textbf{b}_1$ \\
+\begin{align*}
+	\left[
+	\begin{array}{rrr} 
+		1 & 0 & 0\\
+		0 & 1 & 0\\
+		0 &0 & 1 
+	\end{array} 
+	\right]
+\end{align*}
+penting untuk diketahui bahwa proses transformasi perlu diperhatikan saat melakukan operasi untuk tidak menggunakan baris yang telah diupdate dimasukkan ke dalam operasi lain dalam satu langkah proses.
