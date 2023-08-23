@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.19)  23 AUG 2023 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.19)  23 AUG 2023 21:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -671,7 +671,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 65.
 LaTeX Info: Redefining \pageref on input line 65.
 LaTeX Info: Redefining \nameref on input line 65.
- (/Users/zaitun/Documents/LaTeX/obe-matriks/OBE.out) (/Users/zaitun/Documents/LaTeX/obe-matriks/OBE.out)
 \@outlinefile=\write4
 \openout4 = `OBE.out'.
 
@@ -692,195 +691,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-(/Users/zaitun/Documents/LaTeX/obe-matriks/konten/point1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
- []
+Package natbib Warning: Citation `zz' on page 1 undefined on input line 86.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+! LaTeX Error: File `konten/point1.tex' not found.
 
- []
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
 
+Enter file name: 
+/Users/zaitun/Documents/LaTeX/obe-matriks/OBE.tex:88: Emergency stop.
+<read *> 
+         
+l.88 \input{konten/point1}
+                          ^^M
+*** (cannot \read from terminal in nonstop modes)
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
-
- []
-
-[1
-
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
-
- []
-
-) (/Users/zaitun/Documents/LaTeX/obe-matriks/konten/point2.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 5.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 85.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 85.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 85.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--177
-
- []
-
-[3]) (/Users/zaitun/Documents/LaTeX/obe-matriks/konten/point3.tex
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
-
- []
-
-) (/Users/zaitun/Documents/LaTeX/obe-matriks/konten/tugasmandiri.tex [5]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-) (/Users/zaitun/Documents/LaTeX/obe-matriks/konten/pustaka.tex) 
-AED: lastpage setting LastPage
-[6] (/Users/zaitun/Documents/LaTeX/obe-matriks/OBE.aux)
-Package rerunfilecheck Info: File `OBE.out' has not changed.
-(rerunfilecheck)             Checksum: 44DA03F08B6ABBEB68DB40626DA89E6E;1272.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 33957 strings out of 478994
- 789776 string characters out of 5858183
- 1199408 words of memory out of 5000000
- 50850 multiletter control sequences out of 15000+600000
- 416442 words of font info for 77 fonts, out of 8000000 for 9000
+ 33832 strings out of 478994
+ 787636 string characters out of 5858183
+ 1166201 words of memory out of 5000000
+ 50788 multiletter control sequences out of 15000+600000
+ 408456 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,18n,103p,770b,853s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on /Users/zaitun/Documents/LaTeX/obe-matriks/OBE.pdf (6 pages, 186187 bytes).
-PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 102i,3n,103p,770b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+/Users/zaitun/Documents/LaTeX/obe-matriks/OBE.tex:88:  ==> Fatal error occurred, no output PDF file produced!
